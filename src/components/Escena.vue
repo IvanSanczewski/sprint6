@@ -1,5 +1,4 @@
 <template>
-
     <ul>
         <li v-for="item in story" :key="item" class="">
             {{item.sentence}}
@@ -34,7 +33,14 @@ export default {
 <style>
 ul {
     list-style: none;
-    text-align: start;
+}
+
+li {
+    margin: 1em 0;
+    padding: .5em 0;
+    
+    border: 2px solid black;
+    border-radius: 1.5em;
 }
 
 </style>

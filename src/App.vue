@@ -13,12 +13,12 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>
 
@@ -26,3 +26,9 @@ export default {
   // {sentence: 'He felt curious about the spaceship, so he entered in. Once there, he got to a room with two doors.', id: 2},
   // {sentence: 'The hero decided to take the door what would take him home.', id: 3},
   // {sentence: 'But the other heroes were not so lucky whith their choice.', id: 4 }
+
+
+  // 'Our hero was surfing the Space when suddenly… he spotted a spaceship!',
+  // 'He felt curious about the spaceship, so he entered in. Once there, he got to a room with two doors.',
+  // 'The hero decided to take the door what would take him home.',
+  // 'But the other heroes were not so lucky whith their choice.'
