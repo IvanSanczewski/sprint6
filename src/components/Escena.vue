@@ -1,14 +1,19 @@
 <template>
-  <p>Our hero was surfing the Space when he spotted a spaceship</p>
+    <p>{{ sentence }}</p>
 </template>
 
 <script>
-import Home from './Home.vue'
+
 
 export default {
-    props: ['sentence'],
+    data(){
+        return {
+            sentence: 'Our hero was surfing the Space when suddenly… he spotted a spaceship!'
+        }
+    }
 }
-</script>
+</script>   
 
 <style>
+
 </style>
