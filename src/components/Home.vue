@@ -39,5 +39,9 @@ export default {
 </script>
 
 <style>
+    button {
+        width: 50%;
 
+        padding: 1em 0;
+    }
 </style>
