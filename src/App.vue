@@ -20,6 +20,9 @@ export default {
   color: #2c3e50;
   /* margin-top: 60px; */
 }
+* {
+  margin: 0;
+}
 </style>
 
   // {sentence: 'Our hero was surfing the Space when suddenly… he spotted a spaceship!', id: 1},

@@ -5,7 +5,6 @@
             {{item.sentence}}
         </li>
     </ul>
-    <div>{{ currentSentence }}</div>
 </template>
 
 <script>
@@ -18,7 +17,7 @@ export default {
     //         sentenceStart: 'Our hero was surfing the Space when suddenly… he spotted a spaceship!',
     //     }
     // },
-    props: ['story', 'currentSentence']
+    props: ['story', 'currentSentence', 'showContent']
 
 }
 </script>   
@@ -26,10 +25,11 @@ export default {
 <style>
 ul {
     list-style: none;
+    padding-inline-start: 0;
 }
 
 li {
-    margin: 1em 0;
+    margin: 1em 1em;
     padding: .5em 0;
     
     border: 2px solid black;
