@@ -26,12 +26,12 @@ export default {
                 {sentence: 'The hero decided to take the door that eventually would take him home.', img: '../assets/3.jpg', id: 3},
                 {sentence: 'But the other heroes were not so lucky with their choice.', img: '../assets/4.jpg', id: 4 }
             ],
-            images: [
-                {img: '../assets/1.jpg', id: 1},
-                {img: '../assets/2.jpg', id: 2},
-                {img: '../assets/3.jpg', id: 3},
-                {img: '../assets/4.jpg', id: 4},
-            ],
+            // images: [
+            //     {img: '../assets/1.jpg', id: 1},
+            //     {img: '../assets/2.jpg', id: 2},
+            //     {img: '../assets/3.jpg', id: 3},
+            //     {img: '../assets/4.jpg', id: 4},
+            // ],
             currentSentence: 1,
             showContent: false
         }

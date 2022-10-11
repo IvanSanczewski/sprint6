@@ -1,5 +1,4 @@
 <template>
-    <!-- <div :style="{backgroundColor : 'red'}"> -->
     <div :style="{backgroundImage : 'url(../assets/1.jpg)'}">
         content
     </div>
@@ -25,17 +24,16 @@ export default {
                 // backgroundColor: 'darkorange',
                 backgroundImage: 'url("https://sprint6/src/assets/1.jpg")',
                 width: '100vw'
-            },
-            images: [
-                {img: '../assets/1.jpg', id: 1},
-                {img: '../assets/2.jpg', id: 2},
-                {img: '../assets/3.jpg', id: 3},
-                {img: '../assets/4.jpg', id: 4},
-            ],  
+            }
+            // images: [
+            //     {img: '../assets/1.jpg', id: 1},
+            //     {img: '../assets/2.jpg', id: 2},
+            //     {img: '../assets/3.jpg', id: 3},
+            //     {img: '../assets/4.jpg', id: 4},
+            // ],  
         }
     },
-    props: ['story', 'currentSentence', 'showContent']
-    // props: ['story', 'images', 'currentSentence', 'showContent']
+    props: ['story', 'images', 'currentSentence', 'showContent']
 }
 </script>   
 
