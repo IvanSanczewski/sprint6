@@ -5,19 +5,26 @@
     </div>
     
     <div v-else>
+        <Botones @previous="previousSentence" @next="nextSentence"/>
+        <!-- <Escena :story="story" :images="images" :currentSentence="currentSentence" :showContent="showContent"/> -->
+        <Escena :story="story" :currentSentence="currentSentence" />
+    </div>
+<!--     
+    <div v-else>
         <div class="nav-btn">
             <button @click="previousSentence">Backwards</button>
             <button @click="nextSentence">Forward</button>
         </div>
         <Escena :story="story" :images="images" :currentSentence="currentSentence" :showContent="showContent"/>
-    </div>
+    </div> -->
 </template>
 
 <script>
 import Escena from './Escena.vue'
+import Botones from './Botones.vue'
 
 export default {
-    components: { Escena },
+    components: { Escena, Botones },
     data () {
         return {
             story: [
@@ -91,17 +98,4 @@ export default {
         border-radius: 1em;
 
     }
-
-    .nav-btn {
-        margin: .5em;
-    }
-    
-    button {
-        width: 50%;
-        max-width: 433px;
-        padding: 1em 0;
-        cursor: pointer;
-    }
-
-
 </style>
