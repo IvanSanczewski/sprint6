@@ -1,10 +1,17 @@
 <template>
+    <!-- <div :style="{backgroundColor : 'red'}"> -->
+    <div :style="{backgroundImage : 'url(../assets/1.jpg)'}">
+        content
+    </div>
     <ul>
         <!-- <li v-for="item in story" :key="item" :ref="highlighted"> -->
         <li v-for="item, id in story" :key="id" :class="{ highlighted: (id + 1) === currentSentence}">
             {{item.sentence}}
+            
         </li>
     </ul>
+
+
 </template>
 
 <script>
@@ -12,17 +19,33 @@
 
 export default {
 
-    // data(){ 
-    //     return {
-    //         sentenceStart: 'Our hero was surfing the Space when suddenly… he spotted a spaceship!',
-    //     }
-    // },
+    data(){ 
+        return {
+            image: { 
+                // backgroundColor: 'darkorange',
+                backgroundImage: 'url("https://sprint6/src/assets/1.jpg")',
+                width: '100vw'
+            },
+            images: [
+                {img: '../assets/1.jpg', id: 1},
+                {img: '../assets/2.jpg', id: 2},
+                {img: '../assets/3.jpg', id: 3},
+                {img: '../assets/4.jpg', id: 4},
+            ],  
+        }
+    },
     props: ['story', 'currentSentence', 'showContent']
-
+    // props: ['story', 'images', 'currentSentence', 'showContent']
 }
 </script>   
 
 <style>
+
+.images {
+    max-width: 100vw;
+    min-width: 100vw;
+}
+
 ul {
     list-style: none;
     padding-inline-start: 0;
