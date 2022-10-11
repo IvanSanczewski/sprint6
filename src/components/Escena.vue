@@ -33,7 +33,8 @@ export default {
             // ],  
         }
     },
-    props: ['story', 'images', 'currentSentence', 'showContent']
+    props: ['story', 'currentSentence', ]
+    // props: ['story', 'images', 'currentSentence', 'showContent']
 }
 </script>   
 
