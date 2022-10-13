@@ -1,48 +1,32 @@
 <template>
-    <div :style="{backgroundImage : 'url(../assets/1.jpg)'}">
-        content
-    </div>
     <ul>
-        <!-- <li v-for="item in story" :key="item" :ref="highlighted"> -->
-        <li v-for="item, id in story" :key="id" :class="{ highlighted: (id + 1) === currentSentence}">
-            {{item.sentence}}
-            
+        <li v-for="item, id in story" :key="id" :class="{ highlighted: item.id === currentSentence}">
+                {{item.sentence}}
+                <img v-show="currentSentence === item.id" :src="item.img" :alt="item.name">
         </li>
     </ul>
-
-
+    <div>
+    </div>
 </template>
 
 <script>
-// import Home from './Home.vue'
-
 export default {
-
-    data(){ 
-        return {
-            image: { 
-                // backgroundColor: 'darkorange',
-                backgroundImage: 'url("https://sprint6/src/assets/1.jpg")',
-                width: '100vw'
-            }
-            // images: [
-            //     {img: '../assets/1.jpg', id: 1},
-            //     {img: '../assets/2.jpg', id: 2},
-            //     {img: '../assets/3.jpg', id: 3},
-            //     {img: '../assets/4.jpg', id: 4},
-            // ],  
-        }
-    },
-    props: ['story', 'currentSentence', ]
-    // props: ['story', 'images', 'currentSentence', 'showContent']
+    props: ['story', 'currentSentence'],
 }
 </script>   
 
 <style>
 
-.images {
-    max-width: 100vw;
-    min-width: 100vw;
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -3;
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover; 
 }
 
 ul {

@@ -1,6 +1,6 @@
 <template>
     <div v-if="!showContent" class="welcome">
-        <h2>Welcome to the app, if you're curious about our hero, press start…</h2>
+        <h2>Welcome to the app, if you're curious about our hero' story, press start…</h2>
         <button @click="startStory"> START </button>
     </div>
     
@@ -28,17 +28,11 @@ export default {
     data () {
         return {
             story: [
-                {sentence: 'Our hero was surfing the Space when suddenly… he spotted a spaceship!',img: '../assets/1.jpg', id: 1},
-                {sentence: 'He felt curious about the spaceship, so he entered in. Once there, he got to a room with two doors.', img: '../assets/2.jpg', id: 2},
-                {sentence: 'The hero decided to take the door that eventually would take him home.', img: '../assets/3.jpg', id: 3},
-                {sentence: 'But the other heroes were not so lucky with their choice.', img: '../assets/4.jpg', id: 4 }
+                {sentence: 'Our hero was surfing the Space when suddenly… he spotted a spaceship!',img: require('@/assets/1.jpg'), id: 1},
+                {sentence: 'He felt curious about the spaceship, so he entered in. Once there, he got to a room with two doors.', img: require('@/assets/2.jpg'), id: 2},
+                {sentence: 'The hero decided to take the door that eventually would take him home.', img: require('@/assets/3.jpg'), id: 3},
+                {sentence: 'But the other heroes were not so lucky with their choice.', img: require('@/assets/4.jpg'), id: 4 }
             ],
-            // images: [
-            //     {img: '../assets/1.jpg', id: 1},
-            //     {img: '../assets/2.jpg', id: 2},
-            //     {img: '../assets/3.jpg', id: 3},
-            //     {img: '../assets/4.jpg', id: 4},
-            // ],
             currentSentence: 1,
             showContent: false
         }
